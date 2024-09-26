@@ -23,14 +23,14 @@ namespace SPTProfileBackupTool
 #if DEBUG
 			DailyTimer.Interval = TimeSpan.FromSeconds(10).TotalMilliseconds;
 #else
-			DailyTimer.Interval = TimeSpan.FromHours(23).Add(TimeSpan.FromMinutes(55)).Ticks;
+			DailyTimer.Interval = TimeSpan.FromHours(23).Add(TimeSpan.FromMinutes(55)).TotalMilliseconds;
 #endif
 			DailyTimer.Elapsed += DailyTimer_Elapsed;
 
 #if DEBUG
 			HourlyTimer.Interval = TimeSpan.FromSeconds(5).TotalMilliseconds;
 #else
-			HourlyTimer.Interval = TimeSpan.FromHours(1).Ticks;
+			HourlyTimer.Interval = TimeSpan.FromHours(1).TotalMilliseconds;
 #endif
 
 			HourlyTimer.Elapsed += HourlyTimer_Elapsed;
