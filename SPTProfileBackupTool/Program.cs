@@ -27,7 +27,7 @@ namespace SPTProfileBackupTool
 #endif
 			DailyTimer.Elapsed += DailyTimer_Elapsed;
 
-#if true
+#if DEBUG
 			HourlyTimer.Interval = TimeSpan.FromSeconds(5).TotalMilliseconds;
 #else
 			HourlyTimer.Interval = TimeSpan.FromHours(1).Ticks;
