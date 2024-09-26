@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <ApplicationIcon>FIKA_TOOLS_LOGO.ico</ApplicationIcon>
+    <Copyright>© Lacyway 2024</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="FIKA_TOOLS_LOGO.ico" />
+  </ItemGroup>
+
+</Project>
